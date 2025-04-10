@@ -1,5 +1,10 @@
 HELP.md
-application.properties
+# Ignore all application.properties files
+**/application.properties
+
+# BUT don't ignore static/ and templates/ folders
+!demo/src/main/resources/static/
+!demo/src/main/resources/templates/
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
